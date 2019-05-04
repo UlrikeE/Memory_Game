@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:url(../img/geometry2.png);
+    font-family: 'Amatic SC', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1em;
+    text-align: center;
+}
+
+/*
+ * Deck of Cards
+ */
+
+.deck {
+    width: 660px;
+    min-height: 660px;
+    background: #34495E;
+    padding: 32px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #D4AC0D;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #E5E7E9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deck .card.open {
+    transform: rotateY(180deg);
+    transition: width 2s, height 2s, transform 0.8s;
+    background: #c0c0c0;
+    cursor: default;
+}
+
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    transform: rotateY(180deg);
+    transition: width 2s, height 2s, transform 0.8s;
+    cursor: default;
+    background: #778899;
+    font-size: 33px;
+}
+.deck .card.close {
+    transform: rotateY(0deg);
+    transition: width 2s, height 2s, transform 0.8s;
+    background: #D4AC0D;
+}
+
+/*
+ * Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 550px;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.restart:hover {
+    transform: rotate(360deg);
+    transition: transform 1s;
+
+}
+
+.score-panel .timer {
+    display: inline-flex;
+    margin-left: 5em;
+}
+
+/*
+ * Congratulations Popup
+ */
+
+.win-popup {
+    position: absolute;
+    top: 20%;
+    padding: 0em 1em 0;
+    border-radius: 10px;
+    background: #f08080;
+    display: none;
+}
+
+.congratulations {
+    width: 100%;
+}
+
+.congratulations table {
+    width: 100%;
+    display: none;
+}
+
+.congratulations .restart {
+    float: left;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.material-icons {
+    font-size: 36px;
+}

@@ -1,0 +1,141 @@
+@media screen and (max-width: 900px) {
+
+  /*
+   * Congratulations Popup
+   */
+   
+  .win-popup {
+     padding: 0em 1em 0;
+   }
+
+  .congratulations h1 {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  /*
+   * Score Panel
+   */
+
+   .score-panel {
+    text-align: left;
+    width: 380px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+  }
+
+  /*
+   * Deck of Cards
+   */
+
+  .deck {
+    width: 400px;
+    min-height: 420px;
+    padding: 20px;
+  }
+
+  .deck .card {
+    height: 80px;
+    width: 80px;
+  }
+
+  .deck .card.show {
+    font-size: 18px;
+  }
+
+  /*
+   * Congratulations Popup
+   */
+
+  .win-popup {
+    padding: 0em 1em 0;
+  }
+
+  .congratulations {
+    font-size: 0.5em;
+  }
+
+  .congratulations h1 {
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .material-icons {
+    font-size: 24px;
+  }
+
+  /*
+   * Deck of Cards
+   */
+
+  .deck {
+    width: 300px;
+    min-height: 310px;
+    box-shadow: 6px 7px 10px 0 rgba(46, 61, 73, 0.5);
+    padding: 10px;
+  }
+
+  .deck .card {
+    height: 60px;
+    width: 60px;
+  }
+
+  .deck .card.show {
+    font-size: 18px;
+  }
+
+  .score-panel {
+    padding: 0 0 0 1em;
+  }
+
+  /*
+   * Score Panel
+   */
+
+   .score-panel {
+    text-align: left;
+    width: 280px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  .score-panel .restart {
+    float: right;
+    cursor: pointer;
+  }
+
+  .score-panel .timer {
+    margin-left: 3em;
+  }
+
+  /*
+   * Congratulations Popup
+   */
+
+  .win-popup {
+    padding: 0em 1em 0;
+  }
+
+  .congratulations {
+    width: 100%;
+  }
+
+  .congratulations h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  .congratulations h2 {
+    font-size: 1em;
+  }
+
+  .congratulations img {
+    width: 15px;
+  }
+
+}
